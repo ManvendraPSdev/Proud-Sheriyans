@@ -1,0 +1,22 @@
+*{
+    margin : 0px ; 
+    padding : 0px ; 
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ; 
+    grid-template-rows: 1fr 1fr 1fr ;
+}
+.child{
+    background-color: rgb(235, 56, 86) ;
+    border : 3px solid white ; 
+}

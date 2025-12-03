@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background: black;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 90%;
+    width: 90%;
+    border-radius: 26px;
+    overflow: hidden;
+    background: radial-gradient(circle at 20% 40%, rgba(178, 201, 212, 0.85), transparent 60%),
+                radial-gradient(circle at 80% 60%, rgba(249, 220, 196, 0.95), transparent 55%),
+                linear-gradient(120deg, #d9d9d9, #e8e3dc);
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    height: 12%;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropbtn{
+    background: transparent;
+    border: none;
+}
+
+h2 span {
+    color: #fff;
+}
+
+.center-nav {
+    display: flex;
+    gap: 29px;
+    align-items: center;
+}
+
+.play-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid #1e1c1c;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.play-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+.section{
+    height: 520px;
+    width: 100% ;
+}
+
+
+/* HERO SECTION */
+.section .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* IMAGE */
+.shirt-img {
+    width: 850px;
+    height: 550px;
+    background-image: url("./images/shirt.png");
+    background-repeat: no-repeat;
+    background-size: 110%; /* zoom a little */
+    position: relative;
+    position: absolute;
+    top: 60px;
+    left: 170px;
+    z-index: 11;
+}
+.firstHeading{
+    color: #fffdfd;
+    font-weight: 600;
+    position: absolute;
+    font-size: 70px; 
+    top: 320px;
+    left: 120px;
+    z-index: 12;
+}
+.secondHeading{
+    color: #fffdfd;
+    position: absolute;
+    font-size: 70px; 
+    top: 380px;
+    left: 130px;
+}
+
+.secondHeading .of{
+    position: relative; /* ya absolute, jisse z-index kaam kare */
+    z-index: 2px;        /* number, px nahi */
+    color: red;  
+}
+.secondHeading .C{
+    z-index: 8;
+    position: absolute;
+    left: 330px;
+}
+.secondHeading .are{
+    z-index: 39;
+    position: absolute;
+    left: 375px;
+}
+
+.thirdHeading{
+    color: #fffdfd;
+    position: absolute;
+    font-size: 70px; 
+    top: 440px;
+    left: 130px;
+}
+
+.fourthHeading{
+    color: #fffdfd;
+    z-index: 12;
+    position: absolute;
+    font-size: 70px; 
+    top: 500px;
+    left: 130px;
+}
+
+.hero .star-img{
+    background-image: url("./images/stars.png");
+    position: absolute;
+    top: 240px;
+    left: 120px;
+    z-index: 12;
+    background-repeat: no-repeat;
+    width: 160px;       
+    height: 160px;       
+    background-size: contain;  /* make sure entire image fits inside container */
+}
+
+.poster{
+    background-image: url("./images/poster.png");
+    position: absolute;
+    height: 40vh;
+    width: 30vw;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 180px;
+    right: 50px;
+}
+
+.text{
+    height: 220px ;
+    width: 220px ;
+}
+
+.text img{
+    width: 220px;
+    position: absolute;
+    top: 160px;
+    left: 330px;
+    z-index: 13;
+}
+
+.text-second{
+    height: 220px ;
+    width: 220px ;
+}
+
+.text-second img{
+    width: 220px;
+    position: absolute;
+    top: 230px;
+    right: 550px;
+    z-index: 13;
+}
+
+
+
+.bottom{
+    width: 100%;
+    height: 140px;
+    background-color: rgb(39, 37, 51);
+    margin-top: -6px;
+    position: relative;
+}
+
+.img-box{
+    width : 3vw ;
+    height: 4vh; 
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid rgb(39, 37, 51);
+}
+.img1{
+    width: 50px;
+    position: absolute;
+    top: 55px;
+    left: 75px;
+}
+.img2{
+    width: 50px;
+    position: absolute;
+    top: 55px;
+    left: 110px;
+}
+.img3{
+    width: 50px;
+    position: absolute;
+    top: 55px;
+    left: 150px;
+}
+.img4{
+    width: 50px;
+    position: absolute;
+    top: 55px;
+    left: 200px;
+}
+.img5{
+    width: 50px;
+    position: absolute;
+    top: 55px;
+    left: 260px;
+}
+
+.bottom h1{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 400;
+    position: absolute;
+    top: 45px;
+    left: 314px;
+}
+
+.req-service{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    height: 50px;
+    width: 190px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-style: bold;
+}

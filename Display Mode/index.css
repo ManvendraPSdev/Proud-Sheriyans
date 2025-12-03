@@ -1,0 +1,71 @@
+@font-face {
+    font-family: cute;
+    src: url(../Sweet\ Pineapple.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.header{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(46, 45, 44);
+}
+h1{
+    font-size: 200px;
+    font-family: cute;
+    font-weight: 900;
+    font-style: italic;
+
+    color: transparent;
+    background-image: url(https://i0.wp.com/bestgrafix.com/wp-content/uploads/2025/08/Love-Gif.gif?fit=640%2C480&ssl=1);
+    background-clip: text;
+    background-size: cover;
+
+    /* -webkit-text-stroke: 1px white ;  */
+}
+.cards{
+    height: 500px;
+    width: 100%;
+
+    background-image: url(https://images.unsplash.com/photo-1654263391025-4c4809a37f5c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1964);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+.cards::-webkit-scrollbar{
+    /* display: none; */
+    background-color: rgb(202, 255, 123);
+}
+.cards::-webkit-scrollbar-thumb{
+    background-color: rgb(151, 246, 10);
+    
+}
+.card{
+    padding: 15px;
+    padding-top:50px ;
+    flex-shrink: 0;
+    height: 400px;
+    width: 300px;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out ;
+}
+img:hover{
+    transform: scale(1.5);
+}

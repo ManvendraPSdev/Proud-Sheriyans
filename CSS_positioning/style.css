@@ -1,0 +1,34 @@
+*{
+    margin : 0px ; 
+    padding: 0px ; 
+    box-sizing: border-box;
+}
+html,body{
+    height : 100% ; 
+    width : 100% ; 
+    background-color: black;
+}
+
+.main{
+    position: relative;
+}
+
+.car1{
+    height : 100px ; 
+    width : 100px ; 
+    background-color: red;
+}
+.car2{
+    position : absolute ;
+    height : 110px ; 
+    width: 140px;
+    background-color: green;
+    left : 100% ; 
+    top : 60% ; 
+    bottom : 70%;
+}
+.car3{
+    height : 170px ; 
+    width : 180px ; 
+    background-color: yellow;
+}

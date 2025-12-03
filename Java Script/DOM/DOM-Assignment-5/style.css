@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background: #020202;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #0a0f1f, #000);
+}
+
+.outerBox{
+    height: 60vh;
+    width: 60vw;
+    background: rgba(255,255,255,0.07);
+    backdrop-filter: blur(10px);
+    border-radius: 1.5rem;
+    border: 1px solid rgba(0, 234, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    box-shadow: 
+        0 0 20px rgba(0, 234, 255, 0.5),
+        0 0 40px rgba(0, 234, 255, 0.2);
+}
+
+.innerBox{
+    height: 5vh;
+    width: 45vw;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 3rem;
+    margin-top: 5%;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
+}
+
+.download{
+    height: 100% ;
+    width: 0% ; 
+    background-color: green;
+    border-radius:3rem ;
+}
+
+.btn-Cont{
+    width: 70%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #00eaff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+.btn{
+    width: 14vw;
+    height: 9vh;
+    border-radius: 2rem;
+    font-weight: 800;
+    font-size: 15px;
+
+    background: #000;
+    color: #00eaff;
+    border: 2px solid #00eaff;
+    
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    box-shadow: 
+        0 0 8px rgba(0,234,255,0.5),
+        inset 0 0 10px rgba(0,234,255,0.3);
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 
+        0 0 20px #00eaff,
+        0 0 40px #00eaff;
+}

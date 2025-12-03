@@ -1,0 +1,40 @@
+*{
+    margin : 0px ; 
+    padding: 0px ;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100% ;
+    width: 100% ;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: #fff; 
+    display: grid;
+    padding: 10px ;
+    gap: 12px;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows : 60px 180px 1fr ;
+
+    grid-template-areas: "header header"
+                "aside section"
+                "figure figure"
+}
+header{
+    background-color: rgb(159, 13, 13);
+    grid-area: header;
+}
+aside{
+    background-color: rgb(7, 72, 7);
+    grid-area: aside;
+}
+section{
+    background-color: rgb(6, 88, 143);
+    grid-area: section;
+}
+figure{
+    background-color: rgb(134, 13, 13);
+    grid-area: figure;
+}

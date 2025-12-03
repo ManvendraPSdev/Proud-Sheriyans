@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html , body {
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+#navBar{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    color: white;
+}
+#celeb{
+    color: white;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+a{
+    color : white ;
+    text-decoration: none;
+}
+#center{
+    position: relative;
+    height: 720px;
+    width: 100%;
+    background-color: azure;
+    overflow: hidden;
+    border-radius: 10px;
+}
+img{
+    background-image: url(https://www.apple.com/v/iphone-17-pro/b/images/overview/welcome/hero_endframe__xdzisdq1ppem_large_2x.jpg);
+    width: 100%;
+    height: auto;
+}
+#centBut{
+    position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: #ff6600;
+  color: white;    
+}

@@ -1,0 +1,91 @@
+*{
+    margin : 0px ; 
+    padding: 0px ;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100% ;
+    width: 100% ;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: #fff; 
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: "Header-left Header-center Header-right"
+                        "Header-left Section-Center Footer-Right"
+                        "Footer-Left Footer-Left Footer-Right"
+}
+.Header-left{
+    grid-area: Header-left;
+    background-color: red;
+    background-image: url("    https://www.hindustantimes.com/ht-img/img/2024/10/27/1600x900/Stree_1730015684397_1730015696688.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Header-center{
+    grid-area: Header-center;
+    background-color: pink;
+    background-image: url("https://www.koimoi.com/wp-content/new-galleries/2023/07/shraddha-rajkummar-flick-stree-2-themed-around-headless-horror-01.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Header-right{
+    grid-area: Header-right;
+    background-color: aquamarine;
+    background-image: url("https://images.indianexpress.com/2024/09/MixCollage-12-Sep-2024-08-43-AM-1852.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* .Section-left{
+    background-color: aqua;
+} */
+.Section-Center{
+    grid-area: Section-Center;
+    background-color: blanchedalmond;
+    background-image: url("https://images.indianexpress.com/2024/08/Stree-2-records-the-second-highest-second-week-collection-after-Baahubali.-Photo-Maddock-FilmsX.jpg");
+    /* background-image: url("https://www.bollywoodhungama.com/wp-content/uploads/2024/08/Stree43512-10.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* .Section-Right{
+    background-color: azure;
+} */
+
+
+.Footer-Left{
+    grid-area: Footer-Left;
+    background-color: cadetblue;
+    background-image: url("https://images.indianexpress.com/2024/09/Stree-2-box-office.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.Footer-Right{
+    grid-area: Footer-Right;
+    background-color: goldenrod;
+    background-image: url("https://images.indianexpress.com/2024/09/Stree-2-Shraddha-Kapoor-Rajkummar-Rao.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+button{
+    position: absolute;
+    top : 59% ; 
+    left: 48%;
+    transform: translate(-50 , -50);
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: xx-large;
+}
