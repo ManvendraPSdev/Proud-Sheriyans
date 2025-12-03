@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body, html {
     height: 100%;
     width: 100%;
@@ -28,7 +27,6 @@ main {
     flex-direction: column;
 }
 
-/* HEADER */
 .header {
     width: 100%;
     height: 12%;
@@ -77,21 +75,18 @@ h2 span {
     width: 100% ;
 }
 
-
-/* HERO SECTION */
 .section .hero {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* IMAGE */
 .shirt-img {
     width: 850px;
     height: 550px;
     background-image: url("./images/shirt.png");
     background-repeat: no-repeat;
-    background-size: 110%; /* zoom a little */
+    background-size: 110%;
     position: relative;
     position: absolute;
     top: 60px;
@@ -116,8 +111,8 @@ h2 span {
 }
 
 .secondHeading .of{
-    position: relative; /* ya absolute, jisse z-index kaam kare */
-    z-index: 2px;        /* number, px nahi */
+    position: relative; 
+    z-index: 2px;       
     color: red;  
 }
 .secondHeading .C{
@@ -157,7 +152,7 @@ h2 span {
     background-repeat: no-repeat;
     width: 160px;       
     height: 160px;       
-    background-size: contain;  /* make sure entire image fits inside container */
+    background-size: contain;  
 }
 
 .poster{
